@@ -3,8 +3,8 @@
  * SVG Icons class
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 /**
@@ -17,9 +17,9 @@
  * All icons are assumed to have equal width and height, hence the option
  * to only specify a `$size` parameter in the svg methods.
  *
- * @since Twenty Nineteen 1.0
+ * @since Twenty Nineteen Clone 1.0
  */
-class TwentyNineteen_SVG_Icons {
+class TwentyNineteenClone_SVG_Icons {
 
 	/**
 	 * Gets the SVG code for a given icon.

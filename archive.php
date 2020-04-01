@@ -5,8 +5,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 get_header();
@@ -40,7 +40,7 @@ get_header();
 			endwhile;
 
 			// Previous/next page navigation.
-			twentynineteen_the_posts_navigation();
+			twentynineteenclone_the_posts_navigation();
 
 			// If no content, include the "No posts found" template.
 		else :

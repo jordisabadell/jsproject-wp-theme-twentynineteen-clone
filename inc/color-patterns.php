@@ -1,16 +1,16 @@
 <?php
 /**
- * Twenty Nineteen: Color Patterns
+ * Twenty Nineteen Clone: Color Patterns
  *
  * @package WordPress
- * @subpackage TwentyNineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage TwentyNineteenClone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 /**
  * Generate the CSS for the current primary color.
  */
-function twentynineteen_custom_colors_css() {
+function twentynineteenclone_custom_colors_css() {
 
 	$primary_color = 199;
 	if ( 'default' !== get_theme_mod( 'primary_color', 'default' ) ) {
@@ -18,53 +18,53 @@ function twentynineteen_custom_colors_css() {
 	}
 
 	/**
-	 * Filter Twenty Nineteen default saturation level.
+	 * Filter Twenty Nineteen Clone default saturation level.
 	 *
-	 * @since Twenty Nineteen 1.0
+	 * @since Twenty Nineteen Clone 1.0
 	 *
 	 * @param int $saturation Color saturation level.
 	 */
-	$saturation = apply_filters( 'twentynineteen_custom_colors_saturation', 100 );
+	$saturation = apply_filters( 'twentynineteenclone_custom_colors_saturation', 100 );
 	$saturation = absint( $saturation ) . '%';
 
 	/**
-	 * Filter Twenty Nineteen default selection saturation level.
+	 * Filter Twenty Nineteen Clone default selection saturation level.
 	 *
-	 * @since Twenty Nineteen 1.0
+	 * @since Twenty Nineteen Clone 1.0
 	 *
 	 * @param int $saturation_selection Selection color saturation level.
 	 */
-	$saturation_selection = absint( apply_filters( 'twentynineteen_custom_colors_saturation_selection', 50 ) );
+	$saturation_selection = absint( apply_filters( 'twentynineteenclone_custom_colors_saturation_selection', 50 ) );
 	$saturation_selection = $saturation_selection . '%';
 
 	/**
-	 * Filter Twenty Nineteen default lightness level.
+	 * Filter Twenty Nineteen Clone default lightness level.
 	 *
-	 * @since Twenty Nineteen 1.0
+	 * @since Twenty Nineteen Clone 1.0
 	 *
 	 * @param int $lightness Color lightness level.
 	 */
-	$lightness = apply_filters( 'twentynineteen_custom_colors_lightness', 33 );
+	$lightness = apply_filters( 'twentynineteenclone_custom_colors_lightness', 33 );
 	$lightness = absint( $lightness ) . '%';
 
 	/**
-	 * Filter Twenty Nineteen default hover lightness level.
+	 * Filter Twenty Nineteen Clone default hover lightness level.
 	 *
-	 * @since Twenty Nineteen 1.0
+	 * @since Twenty Nineteen Clone 1.0
 	 *
 	 * @param int $lightness_hover Hover color lightness level.
 	 */
-	$lightness_hover = apply_filters( 'twentynineteen_custom_colors_lightness_hover', 23 );
+	$lightness_hover = apply_filters( 'twentynineteenclone_custom_colors_lightness_hover', 23 );
 	$lightness_hover = absint( $lightness_hover ) . '%';
 
 	/**
-	 * Filter Twenty Nineteen default selection lightness level.
+	 * Filter Twenty Nineteen Clone default selection lightness level.
 	 *
-	 * @since Twenty Nineteen 1.0
+	 * @since Twenty Nineteen Clone 1.0
 	 *
 	 * @param int $lightness_selection Selection color lightness level.
 	 */
-	$lightness_selection = apply_filters( 'twentynineteen_custom_colors_lightness_selection', 90 );
+	$lightness_selection = apply_filters( 'twentynineteenclone_custom_colors_lightness_selection', 90 );
 	$lightness_selection = absint( $lightness_selection ) . '%';
 
 	$theme_css = '
@@ -259,13 +259,13 @@ function twentynineteen_custom_colors_css() {
 	}
 
 	/**
-	 * Filters Twenty Nineteen custom colors CSS.
+	 * Filters Twenty Nineteen Clone custom colors CSS.
 	 *
-	 * @since Twenty Nineteen 1.0
+	 * @since Twenty Nineteen Clone 1.0
 	 *
 	 * @param string $css           Base theme colors CSS.
 	 * @param int    $primary_color The user's selected color hue.
 	 * @param string $saturation    Filtered theme color saturation level.
 	 */
-	return apply_filters( 'twentynineteen_custom_colors_css', $theme_css, $primary_color, $saturation );
+	return apply_filters( 'twentynineteenclone_custom_colors_css', $theme_css, $primary_color, $saturation );
 }

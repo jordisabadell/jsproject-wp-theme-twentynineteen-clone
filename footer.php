@@ -7,8 +7,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 ?>
@@ -22,10 +22,10 @@
 			<?php if ( ! empty( $blog_info ) ) : ?>
 				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
 			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteenclone' ) ); ?>" class="imprint">
 				<?php
 				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
+				printf( __( 'Proudly powered by %s.', 'twentynineteenclone' ), 'WordPress' );
 				?>
 			</a>
 			<?php
@@ -34,7 +34,7 @@
 			}
 			?>
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
+				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteenclone' ); ?>">
 					<?php
 					wp_nav_menu(
 						array(

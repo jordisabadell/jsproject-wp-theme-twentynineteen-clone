@@ -1,11 +1,11 @@
 {
-  "name": "twentynineteen",
+  "name": "twentynineteenclone",
   "version": "1.0.0",
-  "description": "Default WP Theme",
+  "description": "This theme is a clone of Twenty Nineteen original Wordpress Theme.",
   "bugs": {
-    "url": "https://github.com/WordPress/twentynineteen/issues"
+    "url": "https://github.com/jordisabadell/jsproject-wptheme-twentynineteen-clone"
   },
-  "homepage": "https://github.com/WordPress/twentynineteen#readme",
+  "homepage": "https://github.com/jordisabadell/jsproject-wptheme-twentynineteen-clone",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.5.0",
     "autoprefixer": "^9.6.0",

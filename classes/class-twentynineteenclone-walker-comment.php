@@ -3,16 +3,16 @@
  * Custom comment walker for this theme
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 /**
  * This class outputs custom comment walker for HTML5 friendly WordPress comment and threaded replies.
  *
- * @since Twenty Nineteen 1.0
+ * @since Twenty Nineteen Clone 1.0
  */
-class TwentyNineteen_Walker_Comment extends Walker_Comment {
+class TwentyNineteenClone_Walker_Comment extends Walker_Comment {
 
 	/**
 	 * Outputs a comment in the HTML5 format.
@@ -49,14 +49,14 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 						 * Using the `check` icon instead of `check_circle`, since we can't add a
 						 * fill color to the inner check shape when in circle form.
 						 */
-						if ( twentynineteen_is_comment_by_post_author( $comment ) ) {
-							printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteen_get_icon_svg( 'check', 24 ) );
+						if ( twentynineteenclone_is_comment_by_post_author( $comment ) ) {
+							printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteenclone_get_icon_svg( 'check', 24 ) );
 						}
 
 						printf(
 							wp_kses(
 								/* translators: %s: Comment author link. */
-								__( '%s <span class="screen-reader-text says">says:</span>', 'twentynineteen' ),
+								__( '%s <span class="screen-reader-text says">says:</span>', 'twentynineteenclone' ),
 								array(
 									'span' => array(
 										'class' => array(),
@@ -76,24 +76,24 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 						<a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
 							<?php
 								/* translators: 1: Comment date, 2: Comment time. */
-								$comment_timestamp = sprintf( __( '%1$s at %2$s', 'twentynineteen' ), get_comment_date( '', $comment ), get_comment_time() );
+								$comment_timestamp = sprintf( __( '%1$s at %2$s', 'twentynineteenclone' ), get_comment_date( '', $comment ), get_comment_time() );
 							?>
 							<time datetime="<?php comment_time( 'c' ); ?>" title="<?php echo $comment_timestamp; ?>">
 								<?php echo $comment_timestamp; ?>
 							</time>
 						</a>
 						<?php
-							$edit_comment_icon = twentynineteen_get_icon_svg( 'edit', 16 );
-							edit_comment_link( __( 'Edit', 'twentynineteen' ), '<span class="edit-link-sep">&mdash;</span> <span class="edit-link">' . $edit_comment_icon, '</span>' );
+							$edit_comment_icon = twentynineteenclone_get_icon_svg( 'edit', 16 );
+							edit_comment_link( __( 'Edit', 'twentynineteenclone' ), '<span class="edit-link-sep">&mdash;</span> <span class="edit-link">' . $edit_comment_icon, '</span>' );
 						?>
 					</div><!-- .comment-metadata -->
 
 					<?php
 					$commenter = wp_get_current_commenter();
 					if ( $commenter['comment_author_email'] ) {
-						$moderation_note = __( 'Your comment is awaiting moderation.', 'twentynineteen' );
+						$moderation_note = __( 'Your comment is awaiting moderation.', 'twentynineteenclone' );
 					} else {
-						$moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'twentynineteen' );
+						$moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'twentynineteenclone' );
 					}
 					?>
 

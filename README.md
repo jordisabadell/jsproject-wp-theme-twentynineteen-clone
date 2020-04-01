@@ -1,1 +1,1 @@
-# jsproject-wptheme-twentynineteen-clone
+# jsproject-wptheme-twentynineteenclone-clone

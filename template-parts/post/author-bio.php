@@ -3,8 +3,8 @@
  * The template for displaying Author info
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 if ( (bool) get_the_author_meta( 'description' ) ) : ?>
@@ -14,7 +14,7 @@ if ( (bool) get_the_author_meta( 'description' ) ) : ?>
 			<?php
 			printf(
 				/* translators: %s: Post author. */
-				__( 'Published by %s', 'twentynineteen' ),
+				__( 'Published by %s', 'twentynineteenclone' ),
 				esc_html( get_the_author() )
 			);
 			?>
@@ -23,7 +23,7 @@ if ( (bool) get_the_author_meta( 'description' ) ) : ?>
 	<p class="author-description">
 		<?php the_author_meta( 'description' ); ?>
 		<a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-			<?php _e( 'View more posts', 'twentynineteen' ); ?>
+			<?php _e( 'View more posts', 'twentynineteenclone' ); ?>
 		</a>
 	</p><!-- .author-description -->
 </div><!-- .author-bio -->

@@ -8,8 +8,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 /*
@@ -21,7 +21,7 @@ if ( post_password_required() ) {
 	return;
 }
 
-$discussion = twentynineteen_get_discussion_data();
+$discussion = twentynineteenclone_get_discussion_data();
 ?>
 
 <div id="comments" class="<?php echo comments_open() ? 'comments-area' : 'comments-area comments-closed'; ?>">
@@ -30,14 +30,14 @@ $discussion = twentynineteen_get_discussion_data();
 		<?php
 		if ( comments_open() ) {
 			if ( have_comments() ) {
-				_e( 'Join the Conversation', 'twentynineteen' );
+				_e( 'Join the Conversation', 'twentynineteenclone' );
 			} else {
-				_e( 'Leave a comment', 'twentynineteen' );
+				_e( 'Leave a comment', 'twentynineteenclone' );
 			}
 		} else {
 			if ( '1' == $discussion->responses ) {
 				/* translators: %s: Post title. */
-				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'twentynineteen' ), get_the_title() );
+				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'twentynineteenclone' ), get_the_title() );
 			} else {
 				printf(
 					/* translators: 1: Number of comments, 2: Post title. */
@@ -46,7 +46,7 @@ $discussion = twentynineteen_get_discussion_data();
 						'%1$s replies on &ldquo;%2$s&rdquo;',
 						$discussion->responses,
 						'comments title',
-						'twentynineteen'
+						'twentynineteenclone'
 					),
 					number_format_i18n( $discussion->responses ),
 					get_the_title()
@@ -67,7 +67,7 @@ $discussion = twentynineteen_get_discussion_data();
 
 		// Show comment form at top if showing newest comments at the top.
 		if ( comments_open() ) {
-			twentynineteen_comment_form( 'desc' );
+			twentynineteenclone_comment_form( 'desc' );
 		}
 
 		?>
@@ -75,8 +75,8 @@ $discussion = twentynineteen_get_discussion_data();
 			<?php
 			wp_list_comments(
 				array(
-					'walker'      => new TwentyNineteen_Walker_Comment(),
-					'avatar_size' => twentynineteen_get_avatar_size(),
+					'walker'      => new TwentyNineteenClone_Walker_Comment(),
+					'avatar_size' => twentynineteenclone_get_avatar_size(),
 					'short_ping'  => true,
 					'style'       => 'ol',
 				)
@@ -87,13 +87,13 @@ $discussion = twentynineteen_get_discussion_data();
 
 		// Show comment navigation.
 		if ( have_comments() ) :
-			$prev_icon     = twentynineteen_get_icon_svg( 'chevron_left', 22 );
-			$next_icon     = twentynineteen_get_icon_svg( 'chevron_right', 22 );
-			$comments_text = __( 'Comments', 'twentynineteen' );
+			$prev_icon     = twentynineteenclone_get_icon_svg( 'chevron_left', 22 );
+			$next_icon     = twentynineteenclone_get_icon_svg( 'chevron_right', 22 );
+			$comments_text = __( 'Comments', 'twentynineteenclone' );
 			the_comments_navigation(
 				array(
-					'prev_text' => sprintf( '%s <span class="nav-prev-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span>', $prev_icon, __( 'Previous', 'twentynineteen' ), __( 'Comments', 'twentynineteen' ) ),
-					'next_text' => sprintf( '<span class="nav-next-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span> %s', __( 'Next', 'twentynineteen' ), __( 'Comments', 'twentynineteen' ), $next_icon ),
+					'prev_text' => sprintf( '%s <span class="nav-prev-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span>', $prev_icon, __( 'Previous', 'twentynineteenclone' ), __( 'Comments', 'twentynineteenclone' ) ),
+					'next_text' => sprintf( '<span class="nav-next-text"><span class="primary-text">%s</span> <span class="secondary-text">%s</span></span> %s', __( 'Next', 'twentynineteenclone' ), __( 'Comments', 'twentynineteenclone' ), $next_icon ),
 				)
 			);
 		endif;
@@ -102,9 +102,9 @@ $discussion = twentynineteen_get_discussion_data();
 		if ( comments_open() && 'asc' === strtolower( get_option( 'comment_order', 'asc' ) ) ) :
 			?>
 			<div class="comment-form-flex">
-				<span class="screen-reader-text"><?php _e( 'Leave a comment', 'twentynineteen' ); ?></span>
-				<?php twentynineteen_comment_form( 'asc' ); ?>
-				<h2 class="comments-title" aria-hidden="true"><?php _e( 'Leave a comment', 'twentynineteen' ); ?></h2>
+				<span class="screen-reader-text"><?php _e( 'Leave a comment', 'twentynineteenclone' ); ?></span>
+				<?php twentynineteenclone_comment_form( 'asc' ); ?>
+				<h2 class="comments-title" aria-hidden="true"><?php _e( 'Leave a comment', 'twentynineteenclone' ); ?></h2>
 			</div>
 			<?php
 		endif;
@@ -113,7 +113,7 @@ $discussion = twentynineteen_get_discussion_data();
 		if ( ! comments_open() ) :
 			?>
 			<p class="no-comments">
-				<?php _e( 'Comments are closed.', 'twentynineteen' ); ?>
+				<?php _e( 'Comments are closed.', 'twentynineteenclone' ); ?>
 			</p>
 			<?php
 		endif;
@@ -121,7 +121,7 @@ $discussion = twentynineteen_get_discussion_data();
 	else :
 
 		// Show comment form.
-		twentynineteen_comment_form( true );
+		twentynineteenclone_comment_form( true );
 
 	endif; // if have_comments();
 	?>

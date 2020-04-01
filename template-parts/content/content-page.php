@@ -5,14 +5,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
+ * @subpackage Twenty_Nineteen_Clone
+ * @since Twenty Nineteen Clone 1.0
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
+	<?php if ( ! twentynineteenclone_can_show_post_thumbnail() ) : ?>
 	<header class="entry-header">
 		<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 	</header>
@@ -24,7 +24,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteenclone' ),
 				'after'  => '</div>',
 			)
 		);
@@ -38,7 +38,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Post title. Only visible to screen readers. */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'twentynineteen' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'twentynineteenclone' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -47,7 +47,7 @@
 					),
 					get_the_title()
 				),
-				'<span class="edit-link">' . twentynineteen_get_icon_svg( 'edit', 16 ),
+				'<span class="edit-link">' . twentynineteenclone_get_icon_svg( 'edit', 16 ),
 				'</span>'
 			);
 			?>
