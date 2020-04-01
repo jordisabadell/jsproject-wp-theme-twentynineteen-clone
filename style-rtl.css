@@ -55,11 +55,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * a custom font that includes just a Hoefler Text space replacement for that
  * character instead.
  */
-@font-face {
-  font-family: 'NonBreakingSpaceOverride';
-  src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format("woff2"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUQAA0AAAAACDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE9AAAABwAAAAchf5yU0dERUYAAATYAAAAHAAAAB4AJwAbT1MvMgAAAaAAAABJAAAAYJAcgU5jbWFwAAACIAAAAF4AAAFqUUxBZ2dhc3AAAATQAAAACAAAAAgAAAAQZ2x5ZgAAApAAAAAyAAAAPL0n8y9oZWFkAAABMAAAADAAAAA2Fi93Z2hoZWEAAAFgAAAAHQAAACQOSgWaaG10eAAAAewAAAAzAAAAVC7TAQBsb2NhAAACgAAAABAAAAAsAOQBAm1heHAAAAGAAAAAHQAAACAAWQALbmFtZQAAAsQAAAF6AAADIYvD/Adwb3N0AAAEQAAAAI4AAADsapk2o3jaY2BkYGAA4ov5mwzj+W2+MnCzXwCKMNzgCBSB0LfbQDQ7AxuI4mBgAlEAFKQIRHjaY2BkYGD3+NvCwMDBAALsDAyMDKhAFAA3+wH3AAAAeNpjYGRgYBBl4GBgYgABEMnIABJzAPMZAAVmAGUAAAB42mNgZlJhnMDAysDCKsKygYGBYRqEZtrDYMT4D8gHSmEHjgUFOQwODAqqf9g9/rYwMLB7MNUAhRlBcsxBrMlASoGBEQAj8QtyAAAAeNrjYGBkAAGmWQwMjO8gmBnIZ2NA0ExAzNjAAFYJVn0ASBsD6VAIDZb7AtELAgANIgb9AHjaY2BgYGaAYBkGRgYQSAHyGMF8FgYPIM3HwMHAxMDGoMCwQIFLQV8hXvXP//9AcRCfAcb///h/ygPW+w/vb7olBjUHCTCyMcAFGZmABBO6AogThgZgIUsXAEDcEzcAAHjaY2BgECMCyoEgACZaAed42mNgYmRgYGBnYGNgYAZSDJqMgorCgoqCjECRXwwNrCAKSP5mAAFGBiRgyAAAi/YFBQAAeNqtkc1OwkAUhU/5M25cEhcsZick0AwlBJq6MWwgJkAgYV/KAA2lJeUn+hY+gktXvpKv4dLTMqKycGHsTZNv7px7z50ZAFd4hYHjdw1Ls4EiHjVncIFnzVnc4F1zDkWjrzmPW+NNcwGlzIRKI3fJlUyrEjZQxb3mDH2fNGfRx4vmHKqG0JzHg6E0F9DOlFBGBxUI1GEzLNT4S0aLuTtsGAEUuYcQHkyg3KmIum1bNUvKlrjbbAIleqHHnS4iSudpQcySMYtdFiXlAxzSbAwfMxK6kZoHKhbjjespMTioOPZnzI+4ucCeTVyKMVKLfeAS6vSWaTinuZwzyy/Dc7vaed+6KaV0kukdPUk6yOcctZPvvxxqksq2lEW8RvHjMEO2FCl/zy6p3NEm0R9OFSafJdldc4QVeyaaObMBO0/5cCaa6d9Ggyubxire+lEojscdjoWUR1xGOy8KD8mG2ZLO2l2paDc3A39qmU2z2W5YNv5+u79e6QfGJY/hAAB42m3NywrCMBQE0DupWp/1AYI7/6DEaLQu66Mrd35BKUWKJSlFv1+rue4cGM7shgR981qSon+ZNwUJ8iDgoYU2OvDRRQ99DDDECAHGmGCKmf80hZSx/Kik/LliFbtmN6xmt+yOjdg9GztV4tROnRwX/Bsaaw51nt4Lc7tWaZYHp/MlzKx51LZs5htNri+2AAAAAQAB//8AD3jaY2BkYGDgAWIxIGZiYARCESBmAfMYAAR6AEMAAAABAAAAANXtRbgAAAAA2AhRFAAAAADYCNuG) format("woff");
-}
+/*@font-face {
+	font-family: 'NonBreakingSpaceOverride';
+	src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format('woff2'),
+		 url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUQAA0AAAAACDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE9AAAABwAAAAchf5yU0dERUYAAATYAAAAHAAAAB4AJwAbT1MvMgAAAaAAAABJAAAAYJAcgU5jbWFwAAACIAAAAF4AAAFqUUxBZ2dhc3AAAATQAAAACAAAAAgAAAAQZ2x5ZgAAApAAAAAyAAAAPL0n8y9oZWFkAAABMAAAADAAAAA2Fi93Z2hoZWEAAAFgAAAAHQAAACQOSgWaaG10eAAAAewAAAAzAAAAVC7TAQBsb2NhAAACgAAAABAAAAAsAOQBAm1heHAAAAGAAAAAHQAAACAAWQALbmFtZQAAAsQAAAF6AAADIYvD/Adwb3N0AAAEQAAAAI4AAADsapk2o3jaY2BkYGAA4ov5mwzj+W2+MnCzXwCKMNzgCBSB0LfbQDQ7AxuI4mBgAlEAFKQIRHjaY2BkYGD3+NvCwMDBAALsDAyMDKhAFAA3+wH3AAAAeNpjYGRgYBBl4GBgYgABEMnIABJzAPMZAAVmAGUAAAB42mNgZlJhnMDAysDCKsKygYGBYRqEZtrDYMT4D8gHSmEHjgUFOQwODAqqf9g9/rYwMLB7MNUAhRlBcsxBrMlASoGBEQAj8QtyAAAAeNrjYGBkAAGmWQwMjO8gmBnIZ2NA0ExAzNjAAFYJVn0ASBsD6VAIDZb7AtELAgANIgb9AHjaY2BgYGaAYBkGRgYQSAHyGMF8FgYPIM3HwMHAxMDGoMCwQIFLQV8hXvXP//9AcRCfAcb///h/ygPW+w/vb7olBjUHCTCyMcAFGZmABBO6AogThgZgIUsXAEDcEzcAAHjaY2BgECMCyoEgACZaAed42mNgYmRgYGBnYGNgYAZSDJqMgorCgoqCjECRXwwNrCAKSP5mAAFGBiRgyAAAi/YFBQAAeNqtkc1OwkAUhU/5M25cEhcsZick0AwlBJq6MWwgJkAgYV/KAA2lJeUn+hY+gktXvpKv4dLTMqKycGHsTZNv7px7z50ZAFd4hYHjdw1Ls4EiHjVncIFnzVnc4F1zDkWjrzmPW+NNcwGlzIRKI3fJlUyrEjZQxb3mDH2fNGfRx4vmHKqG0JzHg6E0F9DOlFBGBxUI1GEzLNT4S0aLuTtsGAEUuYcQHkyg3KmIum1bNUvKlrjbbAIleqHHnS4iSudpQcySMYtdFiXlAxzSbAwfMxK6kZoHKhbjjespMTioOPZnzI+4ucCeTVyKMVKLfeAS6vSWaTinuZwzyy/Dc7vaed+6KaV0kukdPUk6yOcctZPvvxxqksq2lEW8RvHjMEO2FCl/zy6p3NEm0R9OFSafJdldc4QVeyaaObMBO0/5cCaa6d9Ggyubxire+lEojscdjoWUR1xGOy8KD8mG2ZLO2l2paDc3A39qmU2z2W5YNv5+u79e6QfGJY/hAAB42m3NywrCMBQE0DupWp/1AYI7/6DEaLQu66Mrd35BKUWKJSlFv1+rue4cGM7shgR981qSon+ZNwUJ8iDgoYU2OvDRRQ99DDDECAHGmGCKmf80hZSx/Kik/LliFbtmN6xmt+yOjdg9GztV4tROnRwX/Bsaaw51nt4Lc7tWaZYHp/MlzKx51LZs5htNri+2AAAAAQAB//8AD3jaY2BkYGDgAWIxIGZiYARCESBmAfMYAAR6AEMAAAABAAAAANXtRbgAAAAA2AhRFAAAAADYCNuG) format('woff');
 
+}*/
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
  * since its edges can look jagged due to lack of antialiasing. In this case, we are several
  * layers of box-shadow to add the border visually, which will render the border smoother. */
@@ -2206,8 +2207,8 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: #463C32;
+  font-family: "Source Sans Pro", serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.8;
@@ -2220,8 +2221,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: #463C32;
+  font-family: "Source Sans Pro", serif;
   font-weight: 400;
   line-height: 1.8;
   text-rendering: optimizeLegibility;
@@ -2253,7 +2254,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .main-navigation,
@@ -2281,7 +2282,7 @@ h6 {
 }
 
 .page-title {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
 }
 
 .site-branding,
@@ -2415,7 +2416,7 @@ i {
 blockquote cite {
   font-size: 0.71111em;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 pre {
@@ -2466,11 +2467,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #bfdcea;
+  background-color: #f6ccca;
 }
 
 ::selection {
-  background-color: #bfdcea;
+  background-color: #f6ccca;
 }
 
 *,
@@ -2485,12 +2486,12 @@ body {
 
 a {
   transition: color 110ms ease-in-out;
-  color: #0073aa;
+  color: #DB322A;
 }
 
 a:hover,
 a:active {
-  color: #005177;
+  color: #b4251e;
   outline: 0;
   text-decoration: none;
 }
@@ -2513,7 +2514,7 @@ h6 {
 
 h1:not(.site-title):before,
 h2:before {
-  background: #767676;
+  background: #6E6259;
   content: "\020";
   display: block;
   height: 2px;
@@ -2522,7 +2523,7 @@ h2:before {
 }
 
 hr {
-  background-color: #767676;
+  background-color: #6E6259;
   border: 0;
   height: 2px;
 }
@@ -2572,7 +2573,7 @@ figure {
 }
 
 blockquote {
-  border-right: 2px solid #0073aa;
+  border-right: 2px solid #DB322A;
   margin-right: 0;
   padding: 0 1rem 0 0;
 }
@@ -2582,20 +2583,20 @@ blockquote > p {
 }
 
 blockquote cite {
-  color: #767676;
+  color: #6E6259;
 }
 
 table {
   margin: 0 0 1rem;
   border-collapse: collapse;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 table td,
 table th {
   padding: 0.5em;
-  border: 1px solid #767676;
+  border: 1px solid #6E6259;
   word-break: break-all;
 }
 
@@ -2606,12 +2607,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   transition: background 150ms ease-in-out;
-  background: #0073aa;
+  background: #DB322A;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.88889em;
   font-weight: 700;
   line-height: 1.2;
@@ -2626,7 +2627,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #111;
+  background: #000;
   cursor: pointer;
 }
 
@@ -2644,7 +2645,7 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-  background: #111;
+  background: #000;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -2667,7 +2668,7 @@ input[type="color"],
 textarea {
   -webkit-backface-visibility: hidden;
   background: #fff;
-  border: solid 1px #ccc;
+  border: solid 1px #DDDDDD;
   box-sizing: border-box;
   outline: none;
   padding: 0.36rem 0.66rem;
@@ -2692,8 +2693,8 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  border-color: #0073aa;
-  outline: thin solid rgba(0, 115, 170, 0.15);
+  border-color: #DB322A;
+  outline: thin solid rgba(219, 50, 42, 0.15);
   outline-offset: -4px;
 }
 
@@ -2719,16 +2720,16 @@ form p {
 --------------------------------------------------------------*/
 a {
   transition: color 110ms ease-in-out;
-  color: #0073aa;
+  color: #DB322A;
 }
 
 a:visited {
-  color: #0073aa;
+  color: #DB322A;
 }
 
 a:hover,
 a:active {
-  color: #005177;
+  color: #b4251e;
   outline: 0;
   text-decoration: none;
 }
@@ -2773,7 +2774,7 @@ body.page .main-navigation {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -2805,14 +2806,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li {
-  color: #0073aa;
+  color: #DB322A;
   display: inline;
   position: relative;
 }
 
 .main-navigation .main-menu > li > a {
   font-weight: 700;
-  color: #0073aa;
+  color: #DB322A;
   margin-left: 0.5rem;
 }
 
@@ -2822,7 +2823,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li > a:hover,
 .main-navigation .main-menu > li > a:hover + svg {
-  color: #005177;
+  color: #b4251e;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children {
@@ -2883,7 +2884,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .sub-menu {
-  background-color: #0073aa;
+  background-color: #DB322A;
   color: #fff;
   list-style: none;
   padding-right: 0;
@@ -2947,13 +2948,13 @@ body.page .main-navigation {
 .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
 .main-navigation .sub-menu > li > .menu-item-link-return:hover,
 .main-navigation .sub-menu > li > .menu-item-link-return:focus {
-  background: #005177;
+  background: #b4251e;
 }
 
 .main-navigation .sub-menu > li > a:hover:after, .main-navigation .sub-menu > li > a:focus:after,
 .main-navigation .sub-menu > li > .menu-item-link-return:hover:after,
 .main-navigation .sub-menu > li > .menu-item-link-return:focus:after {
-  background: #005177;
+  background: #b4251e;
 }
 
 .main-navigation .sub-menu > li > .menu-item-link-return {
@@ -3111,14 +3112,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3214,7 +3215,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3341,20 +3342,20 @@ body.page .main-navigation {
 .social-navigation ul.social-links-menu li a {
   border-bottom: 1px solid transparent;
   display: block;
-  color: #111;
+  color: #463C32;
   margin-bottom: -1px;
   transition: opacity 110ms ease-in-out;
 }
 
 .social-navigation ul.social-links-menu li a:hover, .social-navigation ul.social-links-menu li a:active {
-  color: #111;
+  color: #463C32;
   opacity: 0.6;
 }
 
 .social-navigation ul.social-links-menu li a:focus {
-  color: #111;
+  color: #463C32;
   opacity: 1;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #463C32;
 }
 
 .social-navigation ul.social-links-menu li a svg {
@@ -3438,7 +3439,7 @@ body.page .main-navigation {
 }
 
 .post-navigation .nav-links a .meta-nav {
-  color: #767676;
+  color: #6E6259;
   user-select: none;
 }
 
@@ -3446,7 +3447,7 @@ body.page .main-navigation {
   display: none;
   content: "—";
   width: 2em;
-  color: #767676;
+  color: #6E6259;
   height: 1em;
 }
 
@@ -3455,7 +3456,7 @@ body.page .main-navigation {
 }
 
 .post-navigation .nav-links a:hover {
-  color: #005177;
+  color: #b4251e;
 }
 
 @media only screen and (min-width: 1168px) {
@@ -3560,7 +3561,7 @@ body.page .main-navigation {
 .comment-navigation .nav-next {
   min-width: 50%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
 }
 
@@ -3605,12 +3606,12 @@ body.page .main-navigation {
 }
 
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: #F5F5F5;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   clip-path: none;
-  color: #21759b;
+  color: #DB322A;
   display: block;
   font-size: 0.875rem;
   font-weight: bold;
@@ -3728,7 +3729,7 @@ body.page .main-navigation {
 }
 
 .site-branding {
-  color: #767676;
+  color: #6E6259;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -3788,20 +3789,20 @@ body.page .main-navigation {
 .site-title {
   margin: auto;
   display: inline;
-  color: #111;
+  color: #463C32;
   /* When there is no description set, make sure navigation appears below title. */
 }
 
 .site-title a {
-  color: #111;
+  color: #463C32;
 }
 
 .site-title a:link, .site-title a:visited {
-  color: #111;
+  color: #463C32;
 }
 
 .site-title a:hover {
-  color: #4a4a4a;
+  color: #897562;
 }
 
 .featured-image .site-title {
@@ -3831,7 +3832,7 @@ body.page .main-navigation {
 
 .site-description {
   display: inline;
-  color: #767676;
+  color: #6E6259;
   font-weight: normal;
   margin: 0;
 }
@@ -4071,7 +4072,7 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .site-header.featured-image .site-featured-image:before {
-  background: #0073aa;
+  background: #DB322A;
   mix-blend-mode: screen;
   opacity: 0.1;
 }
@@ -4084,7 +4085,7 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .site-header.featured-image .site-featured-image:after {
-  background: #0073aa;
+  background: #DB322A;
   opacity: .8;
   z-index: 3;
   /* Browsers supporting mix-blend-mode don't need opacity < 1 */
@@ -4123,7 +4124,7 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .site-header.featured-image:after {
-  background: #000e14;
+  background: #1a0605;
   opacity: 0.38;
 }
 
@@ -4149,7 +4150,7 @@ body.page .main-navigation {
 }
 
 .sticky-post {
-  background: #0073aa;
+  background: #DB322A;
   color: #fff;
   display: inline-block;
   font-weight: bold;
@@ -4194,7 +4195,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-title:before {
-  background: #767676;
+  background: #6E6259;
   content: "\020";
   display: block;
   height: 2px;
@@ -4207,12 +4208,12 @@ body.page .main-navigation {
 }
 
 .entry .entry-title a:hover {
-  color: #4a4a4a;
+  color: #897562;
 }
 
 .entry .entry-meta,
 .entry .entry-footer {
-  color: #767676;
+  color: #6E6259;
   font-weight: 500;
 }
 
@@ -4236,7 +4237,7 @@ body.page .main-navigation {
 .entry .entry-meta a:hover,
 .entry .entry-footer a:hover {
   text-decoration: none;
-  color: #0073aa;
+  color: #DB322A;
 }
 
 .entry .entry-meta .svg-icon,
@@ -4332,14 +4333,14 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .entry .post-thumbnail:before {
-  background: #0073aa;
+  background: #DB322A;
   mix-blend-mode: screen;
   opacity: 0.1;
   z-index: 2;
 }
 
 .image-filters-enabled .entry .post-thumbnail:after {
-  background: #0073aa;
+  background: #DB322A;
   mix-blend-mode: multiply;
   opacity: .8;
   z-index: 3;
@@ -4384,7 +4385,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .more-link:hover {
-  color: #0073aa;
+  color: #DB322A;
   text-decoration: none;
 }
 
@@ -4401,7 +4402,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content a.button:hover {
-  background: #111;
+  background: #000;
   color: #fff;
   cursor: pointer;
 }
@@ -4478,7 +4479,7 @@ body.page .main-navigation {
 }
 
 .author-bio .author-title:before {
-  background: #767676;
+  background: #6E6259;
   content: "\020";
   display: block;
   height: 2px;
@@ -4488,7 +4489,7 @@ body.page .main-navigation {
 
 .author-bio .author-description {
   display: inline;
-  color: #767676;
+  color: #6E6259;
   font-size: 1.125em;
   line-height: 1.2;
 }
@@ -4498,7 +4499,7 @@ body.page .main-navigation {
 }
 
 .author-bio .author-description .author-link:hover {
-  color: #005177;
+  color: #b4251e;
   text-decoration: none;
 }
 
@@ -4572,7 +4573,7 @@ body.page .main-navigation {
 }
 
 .comments-area .comments-title-wrap .comments-title:before {
-  background: #767676;
+  background: #6E6259;
   content: "\020";
   display: block;
   height: 2px;
@@ -4658,8 +4659,8 @@ body.page .main-navigation {
 
 .comment-list .pingback .comment-body,
 .comment-list .trackback .comment-body {
-  color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #6E6259;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.71111em;
   font-weight: 500;
   margin-top: 1rem;
@@ -4677,8 +4678,8 @@ body.page .main-navigation {
 
 .comment-list .pingback .comment-body .comment-edit-link,
 .comment-list .trackback .comment-body .comment-edit-link {
-  color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #6E6259;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
 }
 
@@ -4742,7 +4743,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-author .fn a:hover {
-  color: #005177;
+  color: #b4251e;
 }
 
 .comment .comment-author .post-author-badge {
@@ -4750,7 +4751,7 @@ body.page .main-navigation {
   display: block;
   height: 18px;
   position: absolute;
-  background: #008fd3;
+  background: #e1544d;
   left: calc(100% - 2.5rem);
   top: -3px;
   width: 18px;
@@ -4774,7 +4775,7 @@ body.page .main-navigation {
 .comment .comment-metadata .comment-edit-link {
   display: inline;
   font-weight: 500;
-  color: #767676;
+  color: #6E6259;
   vertical-align: baseline;
 }
 
@@ -4785,7 +4786,7 @@ body.page .main-navigation {
 
 .comment .comment-metadata > a:hover,
 .comment .comment-metadata .comment-edit-link:hover {
-  color: #005177;
+  color: #b4251e;
   text-decoration: none;
 }
 
@@ -4794,13 +4795,13 @@ body.page .main-navigation {
 }
 
 .comment .comment-metadata .edit-link-sep {
-  color: #767676;
+  color: #6E6259;
   margin: 0 0.2em;
   vertical-align: baseline;
 }
 
 .comment .comment-metadata .edit-link {
-  color: #767676;
+  color: #6E6259;
 }
 
 .comment .comment-metadata .edit-link svg {
@@ -4817,7 +4818,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-metadata .comment-edit-link:hover {
-  color: #0073aa;
+  color: #DB322A;
 }
 
 .comment .comment-content {
@@ -4857,7 +4858,7 @@ body.page .main-navigation {
 
 .comment-reply-link:hover,
 #cancel-comment-reply-link:hover {
-  color: #005177;
+  color: #b4251e;
 }
 
 .discussion-avatar-list {
@@ -4894,9 +4895,9 @@ body.page .main-navigation {
 
 .comment-form .comment-notes,
 .comment-form label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.71111em;
-  color: #767676;
+  color: #6E6259;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4940,7 +4941,7 @@ body.page .main-navigation {
 .archive .page-header .page-title,
 .search .page-header .page-title,
 .error404 .page-header .page-title {
-  color: #767676;
+  color: #6E6259;
   display: inline;
   letter-spacing: normal;
 }
@@ -4964,7 +4965,7 @@ body.page .main-navigation {
 .archive .page-header .page-description,
 .search .page-header .page-description {
   display: block;
-  color: #111;
+  color: #463C32;
   font-size: 1em;
 }
 
@@ -5036,7 +5037,7 @@ body.page .main-navigation {
 }
 
 #colophon .site-info {
-  color: #767676;
+  color: #6E6259;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -5050,7 +5051,7 @@ body.page .main-navigation {
 
 #colophon .site-info a:hover {
   text-decoration: none;
-  color: #0073aa;
+  color: #DB322A;
 }
 
 #colophon .site-info .imprint,
@@ -5069,11 +5070,11 @@ body.page .main-navigation {
 }
 
 .widget a {
-  color: #0073aa;
+  color: #DB322A;
 }
 
 .widget a:hover {
-  color: #005177;
+  color: #b4251e;
 }
 
 .widget_archive ul,
@@ -5096,8 +5097,8 @@ body.page .main-navigation {
 .widget_recent_comments ul li,
 .widget_recent_entries ul li,
 .widget_rss ul li {
-  color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #6E6259;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: 700;
   line-height: 1.2;
@@ -5124,14 +5125,14 @@ body.page .main-navigation {
 .widget_recent_comments ul ul > li > a::before,
 .widget_recent_entries ul ul > li > a::before,
 .widget_rss ul ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .widget_tag_cloud .tagcloud {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
 }
 
@@ -5171,7 +5172,7 @@ body.page .main-navigation {
   margin: 0 0 1rem;
   display: table;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .widget_calendar .calendar_wrap .wp-calendar-nav span {
@@ -5421,7 +5422,7 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   font-size: 0.88889em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.2;
   box-sizing: border-box;
   font-weight: bold;
@@ -5432,7 +5433,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background) {
-  background-color: #0073aa;
+  background-color: #DB322A;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-text-color) {
@@ -5441,13 +5442,13 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-button .wp-block-button__link:hover {
   color: white;
-  background: #111;
+  background: #000;
   cursor: pointer;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:focus {
   color: white;
-  background: #111;
+  background: #000;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -5473,17 +5474,17 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active:not(.has-text-color) {
-  color: #0073aa;
+  color: #DB322A;
   border-color: currentColor;
 }
 
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
   color: white;
-  border-color: #111;
+  border-color: #000;
 }
 
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover:not(.has-background) {
-  color: #111;
+  color: #000;
 }
 
 .entry .entry-content .wp-block-archives,
@@ -5496,7 +5497,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-archives li > a,
 .entry .entry-content .wp-block-categories li > a,
 .entry .entry-content .wp-block-latest-posts li > a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
@@ -5522,16 +5523,16 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-categories ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .entry .entry-content .wp-block-latest-posts .wp-block-latest-posts__post-date {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.71111em;
-  color: #767676;
+  color: #6E6259;
   line-height: 1.2;
 }
 
@@ -5554,7 +5555,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-latest-posts.is-grid li {
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #DDDDDD;
   padding-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -5578,13 +5579,13 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-verse {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Source Sans Pro", serif;
   font-size: 22px;
   line-height: 1.8;
 }
 
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
@@ -5598,7 +5599,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote blockquote {
-  color: #111;
+  color: #463C32;
   border: none;
   margin-top: calc(4 * 1rem);
   margin-bottom: calc(4.33 * 1rem);
@@ -5626,10 +5627,10 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote cite {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6;
   text-transform: none;
-  color: #767676;
+  color: #6E6259;
   /*
 			 * This requires a rem-based font size calculation instead of our normal em-based one,
 			 * because the cite tag sometimes gets wrapped in a p tag. This is equivalent to $font-size_xs.
@@ -5654,7 +5655,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color {
-  background-color: #0073aa;
+  background-color: #DB322A;
   padding-right: 0;
   padding-left: 0;
 }
@@ -5722,7 +5723,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large) {
   border-width: 2px;
-  border-color: #0073aa;
+  border-color: #DB322A;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -5857,7 +5858,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
 .entry .entry-content .wp-block-cover .wp-block-cover-text,
 .entry .entry-content .wp-block-cover h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6875em;
   font-weight: bold;
   line-height: 1.25;
@@ -5949,7 +5950,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -5958,7 +5959,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-separator,
 .entry .entry-content hr {
-  background-color: #767676;
+  background-color: #6E6259;
   border: 0;
   height: 2px;
   margin-bottom: 2rem;
@@ -6013,7 +6014,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-separator.is-style-dots:not(.has-text-color):not(.has-background),
 .entry .entry-content hr.is-style-dots:not(.has-text-color):not(.has-background) {
-  color: #767676;
+  color: #6E6259;
 }
 
 .entry .entry-content .wp-block-separator.is-style-dots:before,
@@ -6036,11 +6037,11 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-table th,
 .entry .entry-content .wp-block-table td {
-  border-color: #767676;
+  border-color: #6E6259;
 }
 
 .entry .entry-content .wp-block-file {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button {
@@ -6048,9 +6049,9 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   border-radius: 5px;
-  background: #0073aa;
+  background: #DB322A;
   font-size: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.2;
   text-decoration: none;
   font-weight: bold;
@@ -6068,12 +6069,12 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:hover {
-  background: #111;
+  background: #000;
   cursor: pointer;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:focus {
-  background: #111;
+  background: #000;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -6180,7 +6181,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
 }
 
@@ -6257,7 +6258,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .has-white-background-color {
-  color: #111;
+  color: #463C32;
 }
 
 .entry .entry-content .has-white-background-color > p,
@@ -6268,27 +6269,27 @@ body.page .main-navigation {
 .entry .entry-content .has-white-background-color > h5,
 .entry .entry-content .has-white-background-color > h6,
 .entry .entry-content .has-white-background-color > a {
-  color: #111;
+  color: #463C32;
 }
 
 .entry .entry-content .has-primary-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-primary-background-color {
-  background-color: #0073aa;
+  background-color: #DB322A;
 }
 
 .entry .entry-content .has-secondary-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-secondary-background-color {
-  background-color: #005177;
+  background-color: #b4251e;
 }
 
 .entry .entry-content .has-dark-gray-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-dark-gray-background-color {
-  background-color: #111;
+  background-color: #463C32;
 }
 
 .entry .entry-content .has-light-gray-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-light-gray-background-color {
-  background-color: #767676;
+  background-color: #6E6259;
 }
 
 .entry .entry-content .has-white-background-color,
@@ -6300,27 +6301,27 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-pullquote blockquote.has-primary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color > p {
-  color: #0073aa;
+  color: #DB322A;
 }
 
 .entry .entry-content .has-secondary-color,
 .entry .entry-content .wp-block-pullquote blockquote.has-secondary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color > p {
-  color: #005177;
+  color: #b4251e;
 }
 
 .entry .entry-content .has-dark-gray-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color > p {
-  color: #111;
+  color: #463C32;
 }
 
 .entry .entry-content .has-light-gray-color,
 .entry .entry-content .wp-block-pullquote blockquote.has-light-gray-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-light-gray-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-light-gray-color > p {
-  color: #767676;
+  color: #6E6259;
 }
 
 .entry .entry-content .has-white-color,
@@ -6390,9 +6391,9 @@ svg {
 }
 
 .wp-caption-text {
-  color: #767676;
+  color: #6E6259;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -6489,7 +6490,7 @@ svg {
 .gallery-caption {
   display: block;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -6502,5 +6503,5 @@ svg {
 }
 
 .gallery-item > div > a:focus {
-  box-shadow: 0 0 0 2px #0073aa;
+  box-shadow: 0 0 0 2px #db322a;
 }
