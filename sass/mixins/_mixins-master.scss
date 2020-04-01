@@ -66,14 +66,14 @@
 
 @mixin post-section-dash {
 
-	&:before {
+	/*&:before {
 		background: $color__text-light;
 		content: "\020";
 		display: block;
 		height: 2px;
 		margin: $size__spacing-unit 0;
 		width: 1em;
-	}
+	}*/
 }
 
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
