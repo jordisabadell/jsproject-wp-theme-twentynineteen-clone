@@ -1,20 +1,21 @@
-# jsproject-wptheme-twentynineteenclone-clone
+# Twenty Nineteen Clone
+License: GPLv2 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
+## About Twenty Nineteen original theme
 
-```
-npm install
-npm run-script build
-npm run-script watch
-```
+### Licence
+**Twenty Nineteen By WordPress.org**,  
+GNU GPL v2 or later  
+  
+Resources referenced on README.md file of original  1.5 theme version,
+* normalize.css, © 2012-2018 Nicolas Gallagher and Jonathan Neal, MIT
+* underscores, © 2012-2019 Automattic, Inc., GNU GPL v2 or later
 
+### Source
+GitHub repository,  
+https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentynineteen
 
-https://wphierarchy.com/
-
-
-
-### Auxiliary
-- _Font Awesome https://wordpress.org/plugins/font-awesome/ The plugin is not compatible on WordPress multisite at this time.
-- Add Search box https://wpsites.net/wordpress-tutorials/add-search-to-header-in-twenty-nineteen/
-
-### Others
-- Fix audit vulnerabilities in dependencies https://itnext.io/fixing-security-vulnerabilities-in-npm-dependencies-in-less-than-3-mins-a53af735261d
+### Documentation
+Wordpress theme directory,  
+https://wordpress.org/themes/twentynineteen/
