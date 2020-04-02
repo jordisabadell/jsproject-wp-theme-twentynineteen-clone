@@ -19,3 +19,9 @@ https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyninet
 ### Documentation
 Wordpress theme directory,  
 https://wordpress.org/themes/twentynineteen/
+
+---
+
+## WordPress file structure
+
+![Image description](/docs/wordpress-file-structure-diagram.png)
