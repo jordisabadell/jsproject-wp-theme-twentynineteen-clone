@@ -328,3 +328,16 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * 
+ */
+function twentynineteenclone_printpage($page) {
+
+	$s = $page;	
+
+	if(empty($s)) {
+		$s = "¿¿¿Page not defined???"; }
+
+	//---disabled echo $s;
+}
