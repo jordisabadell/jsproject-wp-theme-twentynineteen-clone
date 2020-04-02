@@ -23,5 +23,11 @@ https://wordpress.org/themes/twentynineteen/
 ---
 
 ## WordPress file structure
+Review based on Twenty Nineteen WP Theme.
 
 ![Image description](/docs/wordpress-file-structure-diagram.png)
+
+## WordPress template structure
+Review based on Twenty Nineteen WP Theme.
+
+![Image description](/docs/wordpress-template-structure-diagram.png)
