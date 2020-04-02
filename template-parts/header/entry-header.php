@@ -7,6 +7,8 @@
  * @since Twenty Nineteen Clone 1.0
  */
 
+twentynineteenclone_printpage("entry-header.php");
+
 $discussion = ! is_page() && twentynineteenclone_can_show_post_thumbnail() ? twentynineteenclone_get_discussion_data() : null; ?>
 
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

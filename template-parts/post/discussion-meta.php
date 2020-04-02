@@ -7,6 +7,8 @@
  * @since Twenty Nineteen Clone 1.0
  */
 
+twentynineteenclone_printpage("discussion-meta.php");
+
 /* Get data from current discussion on post. */
 $discussion    = twentynineteenclone_get_discussion_data();
 $has_responses = $discussion->responses > 0;

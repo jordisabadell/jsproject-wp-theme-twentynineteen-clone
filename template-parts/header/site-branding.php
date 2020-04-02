@@ -7,6 +7,8 @@
  * @since Twenty Nineteen Clone 1.0
  */
 ?>
+<?php twentynineteenclone_printpage("site-branding.php"); ?>
+
 <div class="site-branding">
 
 	<?php if ( has_custom_logo() ) : ?>

@@ -7,6 +7,8 @@
  * @since Twenty Nineteen Clone 1.0
  */
 
+twentynineteenclone_printpage("author-bio.php");
+
 if ( (bool) get_the_author_meta( 'description' ) ) : ?>
 <div class="author-bio">
 	<h2 class="author-title">

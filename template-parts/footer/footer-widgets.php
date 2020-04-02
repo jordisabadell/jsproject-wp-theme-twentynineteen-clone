@@ -7,6 +7,8 @@
  * @since Twenty Nineteen Clone 1.0
  */
 
+twentynineteenclone_printpage("footer-widgets.php");
+
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 
 	<aside class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'twentynineteenclone' ); ?>">
