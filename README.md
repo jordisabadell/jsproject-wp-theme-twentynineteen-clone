@@ -1,6 +1,6 @@
 # Twenty Nineteen Clone
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+**A Wordpress theme of JS Project** :rocket:  
+https://www.jordisabadell.com
 
 ## About Twenty Nineteen original theme
 
