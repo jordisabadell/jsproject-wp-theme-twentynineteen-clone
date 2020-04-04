@@ -6,9 +6,9 @@ https://www.jordisabadell.com
 This repository has been created from the following challenges.
 
 - [x] Create a Wordpress Theme.
-- [x] Compile css files with sass.
-- [x] Understand structure of theme files and templates.
-- [ ] Customize styles. 
+- [x] Compile CSS files with Sass.
+- [x] Understand structure of Wordpress theme files and templates.
+- [ ] Customize styles to create an own theme.
 
 ---
 
