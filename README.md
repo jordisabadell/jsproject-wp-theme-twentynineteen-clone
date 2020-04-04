@@ -2,6 +2,16 @@
 **A Wordpress theme of JS Project** :rocket:  
 https://www.jordisabadell.com
 
+## Challenges
+This repository has been created from the following challenges.
+
+- [x] Create a Wordpress Theme.
+- [x] Compile css files with sass.
+- [x] Understand structure of theme files and templates.
+- [ ] Customize styles. 
+
+---
+
 ## About Twenty Nineteen original theme
 
 ### Licence
