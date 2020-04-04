@@ -339,5 +339,5 @@ function twentynineteenclone_printpage($page) {
 	if(empty($s)) {
 		$s = "¿¿¿Page not defined???"; }
 
-	//---disabled echo $s;
+	/*//---disabled*/ echo $s;
 }

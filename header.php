@@ -30,7 +30,9 @@
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 			</div><!-- .site-branding-container -->
 
-			<?php if ( is_singular() && twentynineteenclone_can_show_post_thumbnail() ) : ?>
+			<?php 
+			/* Only for singular post with Featured image. It's used to display background image. */
+			if ( is_singular() && twentynineteenclone_can_show_post_thumbnail() ) : ?>
 				<div class="site-featured-image">
 					<?php
 						twentynineteenclone_post_thumbnail();
