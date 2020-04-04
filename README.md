@@ -30,10 +30,12 @@ https://github.com/WordPress/WordPress/tree/master/wp-content/themes/twentyninet
 Wordpress theme directory,  
 https://wordpress.org/themes/twentynineteen/
 
-### Files structure
+### Wordpress review
 
-![Image description](/docs/wordpress-file-structure-diagram.png)
+![Image description](/docs/wp-theme-files-structure.png)
 
-### Templates structure
+### Twenty Nineteen Theme review
 
-![Image description](/docs/wordpress-template-structure-diagram.png)
+![Image description](/docs/twentynineteen-files-and-templates-structure.png)
+
+![Image description](/docs/twentynineteen-html-structure-header_php.png)
