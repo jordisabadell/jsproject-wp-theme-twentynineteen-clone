@@ -39,3 +39,5 @@ https://wordpress.org/themes/twentynineteen/
 ![Image description](/docs/twentynineteen-files-and-templates-structure.png)
 
 ![Image description](/docs/twentynineteen-html-structure-header_php.png)
+
+![Image description](/docs/twentynineteen-html-structure-site_branding_php.png)
