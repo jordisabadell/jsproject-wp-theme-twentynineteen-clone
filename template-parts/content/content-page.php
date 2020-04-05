@@ -10,7 +10,7 @@
  */
 
 ?>
-<?php twentynineteenclone_printpage("content-page.php"); ?>
+<?php twentynineteenclone_print("content-page.php"); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! twentynineteenclone_can_show_post_thumbnail() ) : ?>

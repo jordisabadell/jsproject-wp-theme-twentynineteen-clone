@@ -10,7 +10,7 @@
  */
 
 get_header();
-twentynineteenclone_printpage("page.php");
+twentynineteenclone_print("page.php");
 ?>
 
 	<div id="primary" class="content-area">

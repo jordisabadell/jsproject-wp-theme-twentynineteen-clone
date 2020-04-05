@@ -332,9 +332,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * 
  */
-function twentynineteenclone_printpage($page) {
-
-	$s = $page;	
+function twentynineteenclone_print($s) {
 
 	if(empty($s)) {
 		$s = "¿¿¿Page not defined???"; }

@@ -7,7 +7,7 @@
  * @since Twenty Nineteen Clone 1.0
  */
 
-twentynineteenclone_printpage("footer-widgets.php");
+twentynineteenclone_print("footer-widgets.php");
 
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 

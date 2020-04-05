@@ -7,7 +7,7 @@
  * @since Twenty Nineteen Clone 1.0
  */
 ?>
-<?php twentynineteenclone_printpage("site-branding.php"); ?>
+<?php twentynineteenclone_print("site-branding.php"); ?>
 
 <div class="site-branding">
 

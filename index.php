@@ -15,7 +15,7 @@
  */
 
 get_header();
-twentynineteenclone_printpage("index.php");
+twentynineteenclone_print("index.php");
 ?>
 
 	<div id="primary" class="content-area">

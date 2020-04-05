@@ -8,7 +8,7 @@
  */
 
 get_header();
-twentynineteenclone_printpage("image.php");
+twentynineteenclone_print("image.php");
 ?>
 
 	<div id="primary" class="content-area">
