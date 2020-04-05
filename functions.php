@@ -335,7 +335,7 @@ require get_template_directory() . '/inc/customizer.php';
 function twentynineteenclone_print($s) {
 
 	if(empty($s)) {
-		$s = "¿¿¿Page not defined???"; }
+		$s = "¿¿¿String not defined???"; }
 
 	/*//---disabled*/ echo $s;
 }
