@@ -332,5 +332,5 @@ function twentynineteenclone_print($s) {
 	if(empty($s)) {
 		$s = "¿¿¿String not defined???"; }
 
-	/*//---disabled*/ echo $s;
+	/*//---disabled echo $s;*/
 }

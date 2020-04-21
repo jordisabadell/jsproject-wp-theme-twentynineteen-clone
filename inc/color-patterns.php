@@ -70,8 +70,6 @@ function twentynineteenclone_custom_colors_css() {
 	$theme_css = '
 		/*
 		 * Set background for:
-		 * - featured image :before
-		 * - featured image :before
 		 * - post thumbmail :before
 		 * - post thumbmail :before
 		 * - Submenu
@@ -80,8 +78,6 @@ function twentynineteenclone_custom_colors_css() {
 		 * - WP Block Button
 		 * - Blocks
 		 */
-		.image-filters-enabled .site-header.featured-image .site-featured-image:before,
-		.image-filters-enabled .site-header.featured-image .site-featured-image:after,
 		.image-filters-enabled .entry .post-thumbnail:before,
 		.image-filters-enabled .entry .post-thumbnail:after,
 		.main-navigation .sub-menu,

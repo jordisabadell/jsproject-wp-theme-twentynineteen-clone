@@ -11,7 +11,7 @@ Version: 1.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentynineteenclone
-Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 
 This theme, like original Tweenty Nineteen Theme and WordPress, is licensed under the npm .
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -3714,25 +3714,10 @@ body.page .main-navigation {
   padding: 1em;
 }
 
-.site-header.featured-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 90vh;
-}
-
-.site-header.featured-image .site-branding-container {
-  margin-bottom: auto;
-}
-
 @media only screen and (min-width: 768px) {
   .site-header {
     margin: 0;
     padding: 3rem 0;
-  }
-  .site-header.featured-image {
-    min-height: 100vh;
-    margin-bottom: 3rem;
   }
 }
 
@@ -3769,7 +3754,6 @@ body.page .main-navigation {
 }
 
 .site-logo .custom-logo-link {
-  border-radius: 100%;
   box-sizing: content-box;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   display: block;
@@ -3781,10 +3765,6 @@ body.page .main-navigation {
 
 .site-logo .custom-logo-link .custom-logo {
   min-height: inherit;
-}
-
-.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
-  box-shadow: 0 0 0 2px black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -3813,16 +3793,6 @@ body.page .main-navigation {
   color: #897562;
 }
 
-.featured-image .site-title {
-  margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .featured-image .site-title {
-    display: inline-block;
-  }
-}
-
 .site-title + .main-navigation {
   display: block;
 }
@@ -3843,311 +3813,6 @@ body.page .main-navigation {
   color: #6E6259;
   font-weight: normal;
   margin: 0;
-}
-
-.site-header.featured-image {
-  /* Hide overflow for overflowing featured image */
-  overflow: hidden;
-  /* Need relative positioning to properly align layers. */
-  position: relative;
-  /* Add text shadow to text, to increase readability. */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  /* Set white text color when featured image is set. */
-  /* add focus state to social media icons */
-  /* Entry header */
-  /* Custom Logo Link */
-  /* Make sure important elements are above pseudo elements used for effects. */
-  /* Set up image filter layer positioning */
-  /* Background & Effects */
-  /* Shared background settings between pseudo elements. */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* The intensity of each blend mode is controlled via layer opacity. */
-  /* Second layer: screen. */
-  /* Third layer: multiply. */
-  /* When image filters are inactive, a black overlay is added. */
-  /* Fourth layer: overlay. */
-  /* Fifth layer: readability overlay */
-}
-
-.site-header.featured-image .site-branding .site-title,
-.site-header.featured-image .site-branding .site-description,
-.site-header.featured-image .main-navigation a:after,
-.site-header.featured-image .main-navigation .main-menu > li.menu-item-has-children:after,
-.site-header.featured-image .main-navigation li,
-.site-header.featured-image .social-navigation li,
-.site-header.featured-image .entry-meta,
-.site-header.featured-image .entry-title {
-  color: #fff;
-}
-
-.site-header.featured-image .main-navigation a,
-.site-header.featured-image .main-navigation a + svg,
-.site-header.featured-image .social-navigation a,
-.site-header.featured-image .site-title a,
-.site-header.featured-image .site-featured-image a {
-  color: #fff;
-  transition: opacity 110ms ease-in-out;
-}
-
-.site-header.featured-image .main-navigation a:hover, .site-header.featured-image .main-navigation a:active,
-.site-header.featured-image .main-navigation a:hover + svg,
-.site-header.featured-image .main-navigation a:active + svg,
-.site-header.featured-image .main-navigation a + svg:hover,
-.site-header.featured-image .main-navigation a + svg:active,
-.site-header.featured-image .main-navigation a + svg:hover + svg,
-.site-header.featured-image .main-navigation a + svg:active + svg,
-.site-header.featured-image .social-navigation a:hover,
-.site-header.featured-image .social-navigation a:active,
-.site-header.featured-image .social-navigation a:hover + svg,
-.site-header.featured-image .social-navigation a:active + svg,
-.site-header.featured-image .site-title a:hover,
-.site-header.featured-image .site-title a:active,
-.site-header.featured-image .site-title a:hover + svg,
-.site-header.featured-image .site-title a:active + svg,
-.site-header.featured-image .site-featured-image a:hover,
-.site-header.featured-image .site-featured-image a:active,
-.site-header.featured-image .site-featured-image a:hover + svg,
-.site-header.featured-image .site-featured-image a:active + svg {
-  color: #fff;
-  opacity: 0.6;
-}
-
-.site-header.featured-image .main-navigation a:focus,
-.site-header.featured-image .main-navigation a:focus + svg,
-.site-header.featured-image .main-navigation a + svg:focus,
-.site-header.featured-image .main-navigation a + svg:focus + svg,
-.site-header.featured-image .social-navigation a:focus,
-.site-header.featured-image .social-navigation a:focus + svg,
-.site-header.featured-image .site-title a:focus,
-.site-header.featured-image .site-title a:focus + svg,
-.site-header.featured-image .site-featured-image a:focus,
-.site-header.featured-image .site-featured-image a:focus + svg {
-  color: #fff;
-}
-
-.site-header.featured-image .main-navigation .sub-menu a {
-  opacity: inherit;
-}
-
-.site-header.featured-image .social-navigation a:focus {
-  color: #fff;
-  opacity: 1;
-  border-bottom: 1px solid #fff;
-}
-
-.site-header.featured-image .social-navigation svg,
-.site-header.featured-image .site-featured-image svg {
-  /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-  -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
-}
-
-.site-header.featured-image .site-featured-image {
-  /* First layer: grayscale. */
-}
-
-.site-header.featured-image .site-featured-image .post-thumbnail img {
-  height: auto;
-  left: 50%;
-  max-width: 1000%;
-  min-height: 100%;
-  min-width: 100vw;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: auto;
-  z-index: 1;
-  /* When image filters are active, make it grayscale to colorize it blue. */
-}
-
-@supports (object-fit: cover) {
-  .site-header.featured-image .site-featured-image .post-thumbnail img {
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    top: 0;
-    transform: none;
-    width: 100%;
-  }
-}
-
-.image-filters-enabled .site-header.featured-image .site-featured-image .post-thumbnail img {
-  filter: grayscale(100%);
-}
-
-.site-header.featured-image .site-featured-image .entry-header {
-  margin-top: calc( 4 * 1rem);
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  /* Entry meta */
-}
-
-@media only screen and (min-width: 768px) {
-  .site-header.featured-image .site-featured-image .entry-header {
-    margin-left: calc(10% + 60px);
-    margin-right: calc(10% + 60px);
-  }
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-title:before {
-  background: #fff;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta {
-  font-weight: 500;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta > span {
-  margin-right: 1rem;
-  display: inline-block;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta > span:last-child {
-  margin-right: 0;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta a {
-  transition: color 110ms ease-in-out;
-  color: currentColor;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta a:hover {
-  text-decoration: none;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta .svg-icon {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.5em;
-}
-
-.site-header.featured-image .site-featured-image .entry-header .entry-meta .discussion-avatar-list {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta {
-    display: flex;
-    position: relative;
-  }
-  .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-title {
-    padding-right: calc(1 * (100vw / 12) + 1rem);
-  }
-  .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta .comment-count {
-    position: absolute;
-    right: 0;
-  }
-  .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta .discussion-avatar-list {
-    display: block;
-    position: absolute;
-    bottom: 100%;
-  }
-}
-
-.site-header.featured-image .custom-logo-link {
-  background: #fff;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-}
-
-.site-header.featured-image .custom-logo-link:hover, .site-header.featured-image .custom-logo-link:active, .site-header.featured-image .custom-logo-link:focus {
-  box-shadow: 0 0 0 2px white;
-}
-
-.site-header.featured-image .site-branding {
-  position: relative;
-  z-index: 10;
-}
-
-.site-header.featured-image .site-featured-image .entry-header {
-  position: relative;
-  z-index: 9;
-}
-
-.site-header.featured-image .site-branding-container:after,
-.site-header.featured-image .site-featured-image:before,
-.site-header.featured-image .site-featured-image:after, .site-header.featured-image:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "\020";
-  width: 100%;
-  height: 100%;
-}
-
-.image-filters-enabled .site-header.featured-image .site-featured-image:before {
-  background: #DB322A;
-  mix-blend-mode: screen;
-  opacity: 0.1;
-}
-
-.site-header.featured-image .site-featured-image:after {
-  background: #000;
-  mix-blend-mode: multiply;
-  opacity: .7;
-  /* When image filters are active, a blue overlay is added. */
-}
-
-.image-filters-enabled .site-header.featured-image .site-featured-image:after {
-  background: #DB322A;
-  opacity: .8;
-  z-index: 3;
-  /* Browsers supporting mix-blend-mode don't need opacity < 1 */
-}
-
-@supports (mix-blend-mode: multiply) {
-  .image-filters-enabled .site-header.featured-image .site-featured-image:after {
-    opacity: 1;
-  }
-}
-
-.image-filters-enabled .site-header.featured-image .site-branding-container:after {
-  background: rgba(0, 0, 0, 0.35);
-  mix-blend-mode: overlay;
-  opacity: 0.5;
-  z-index: 4;
-  /* Browsers supporting mix-blend-mode can have a light overlay */
-}
-
-@supports (mix-blend-mode: overlay) {
-  .image-filters-enabled .site-header.featured-image .site-branding-container:after {
-    background: rgba(255, 255, 255, 0.35);
-  }
-}
-
-.site-header.featured-image:after {
-  background: #000;
-  /**
-		 * Add a transition to the readability overlay, to add a subtle
-		 * but smooth effect when resizing the screen.
-		 */
-  transition: opacity 1200ms ease-in-out;
-  opacity: 0.7;
-  z-index: 5;
-  /* When image filters are active, a blue overlay is added. */
-}
-
-.image-filters-enabled .site-header.featured-image:after {
-  background: #1a0605;
-  opacity: 0.38;
-}
-
-@media only screen and (min-width: 768px) {
-  .image-filters-enabled .site-header.featured-image:after {
-    opacity: 0.18;
-  }
-}
-
-.site-header.featured-image ::-moz-selection {
-  background: rgba(255, 255, 255, 0.17);
-}
-
-.site-header.featured-image ::selection {
-  background: rgba(255, 255, 255, 0.17);
 }
 
 /*--------------------------------------------------------------

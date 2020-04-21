@@ -75,7 +75,7 @@ function twentynineteenclone_customize_register( $wp_customize ) {
 			$wp_customize,
 			'primary_color_hue',
 			array(
-				'description' => __( 'Apply a custom color for buttons, links, featured images, etc.', 'twentynineteenclone' ),
+				'description' => __( 'Apply a custom color for buttons, links, etc.', 'twentynineteenclone' ),
 				'section'     => 'colors',
 				'mode'        => 'hue',
 			)
@@ -95,7 +95,7 @@ function twentynineteenclone_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'image_filter',
 		array(
-			'label'   => __( 'Apply a filter to featured images using the primary color', 'twentynineteenclone' ),
+			'label'   => __( 'Apply a filter using the primary color', 'twentynineteenclone' ),
 			'section' => 'colors',
 			'type'    => 'checkbox',
 		)
